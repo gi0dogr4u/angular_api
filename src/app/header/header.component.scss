@@ -1,0 +1,59 @@
+.desktop-header .container {
+  display: flex;
+  align-items: center;
+  padding: 15px 0 15px 0;
+}
+
+header {
+  background: #fff;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+
+.nav{
+  width: 80%;
+  display: flex;
+}
+
+.features ul, .sign {
+  display: flex;
+}
+
+.features {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.feature-link {
+  color: var(--grayish-violet);
+}
+
+.feature-link:hover {
+  color: var(--very-dark-violet);
+}
+
+.features ul li {
+  padding: 0 15px 0 15px;
+}
+
+.login li {
+  padding: 0 12px 0 12px ;
+}
+
+.sign-up {
+  background: var(--cyan);
+  padding: 7px 20px;
+  border-radius: 25px;
+  color: #fff;
+}
+
+.sign-up:hover {
+  background: hsl(180, 87%, 65%);
+}
+
+
+
