@@ -1,5 +1,5 @@
-const inputUrl = document.querySelector('.shortenlink').value;
-const btn = document.querySelector('.shorten');
+const inputUrl = document.querySelector('.shorten-link').value || undefined;
+const btn = document.querySelector('.shorten-btn');
 
 btn.addEventListener('click', () => {
     const req = fetch(`https://api.shrtco.de/v2/shorten?url=${inputUrl}`, {
