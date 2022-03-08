@@ -8,6 +8,7 @@ import { CardsComponent } from './cards/cards.component';
 import { BoostComponent } from './boost/boost.component';
 import { FooterComponent } from './footer/footer.component';
 import { InputLinkComponent } from './input-link/input-link.component';
+import { ShortenApiService } from './shorten-api.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { InputLinkComponent } from './input-link/input-link.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ShortenApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

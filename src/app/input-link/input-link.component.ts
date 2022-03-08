@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { APP_ID, Component, OnInit } from '@angular/core';
+
+import { ShortenApiService } from '../shorten-api.service';
 
 @Component({
   selector: 'app-input-link',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputLinkComponent implements OnInit {
 
+  shorterlinks: Array<any>;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  encurtar() {
+    this.shortenApiService.encurtar().subscribe(links => this.shorterlinks = links);
   }
 
 }
