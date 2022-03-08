@@ -12,7 +12,10 @@
   z-index: 1;
 }
 
-.advanced h1,
+.advanced h1 {
+  text-align: center;
+  padding-top: 100px;
+}
 .advanced-intro {
   text-align: center;
 }

@@ -1,8 +1,8 @@
-.grey {
-  background: var(--gray);
-  background: hsl(0, 5%, 92%);
-  padding-bottom: 180px;
-}
+//.grey {
+//  background: var(--gray);
+//  background: hsl(0, 5%, 92%);
+//  padding-bottom: 180px;
+//}
 
 .input {
   width: 800px;
@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  bottom: 58px;
+  bottom: -58px;
 }
 
 input[type="text"] {

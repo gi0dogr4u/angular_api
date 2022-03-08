@@ -1,4 +1,4 @@
-const inputUrl = document.querySelector('#shortenlink').value;
+const inputUrl = document.querySelector('.shortenlink').value;
 const btn = document.querySelector('.shorten');
 
 btn.addEventListener('click', () => {
