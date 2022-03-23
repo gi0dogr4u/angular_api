@@ -6,11 +6,13 @@ import { HttpClient } from '@angular/common/http'
 })
 export class ShortenApiService {
 
-  shortenBaseUrl = 'https://api.shrtco.de/v2/';
+  shortenBaseUrl = 'https://api.shrtco.de/v2/shorten';
 
   constructor(private http: HttpClient) { }
 
-  encurtar() {
-    return this.http.get<any[]>(`${this.shortenBaseUrl}`);
+  encurtar(url: string) {
+    return this.http.get<any[]>(`${this.shortenBaseUrl}`, {params: {
+      url
+    }});
   }
 }

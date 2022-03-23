@@ -9,15 +9,18 @@ import { ShortenApiService } from '../shorten-api.service';
 })
 export class InputLinkComponent implements OnInit {
 
-  shorterlinks: Array<any>;
+  url = '';
+  shorterlinks!: Array<any>;
 
-  constructor() { }
+  constructor(
+    private shortenApiService: ShortenApiService
+  ) { }
 
   ngOnInit(): void {
   }
 
   encurtar() {
-    this.shortenApiService.encurtar().subscribe(links => this.shorterlinks = links);
+    this.shortenApiService.encurtar(this.url).subscribe(links => this.shorterlinks = links);
   }
 
 }

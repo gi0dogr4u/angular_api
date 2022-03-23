@@ -4,10 +4,10 @@
         <div class="input-text">
             <label for="text"></label>
             <input type="text" name="link" class="shorten-link" placeholder="Shorten a link here..."
-                aria-labelledby="please shortenlink text" />
+                aria-labelledby="please shortenlink text" [(ngModel)]="url" />
             <p id="please">Please add a link</p>
         </div>
-        <button type="submit" class="shorten-btn">Shorten It!</button>
+        <button type="submit" class="shorten-btn" (click)="encurtar()">Shorten It!</button>
     </div>
     <div class="lists"></div>
 </div>

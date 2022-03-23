@@ -9,6 +9,8 @@ import { BoostComponent } from './boost/boost.component';
 import { FooterComponent } from './footer/footer.component';
 import { InputLinkComponent } from './input-link/input-link.component';
 import { ShortenApiService } from './shorten-api.service';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ShortenApiService } from './shorten-api.service';
     InputLinkComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ShortenApiService],
   bootstrap: [AppComponent]
